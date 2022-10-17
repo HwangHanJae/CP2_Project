@@ -2,9 +2,9 @@
 
 ## 프로젝트 개요
 - **이커머스 고객 행동데이터를 기반으로 상품 추천 시스템**을 구축하였습니다.
-- **전환이 일어난 고객**, **전환이 일어나지 않은 고객으로 분류**하여 상품을 추천하였습니다.
+- **전환이 일어난 고객**, **전환이 일어나지 않은 고객으로 집단을 나누어** 상품을 추천하였습니다.
   - 전환 : 고객이 제품을 장바구니에 담거나 구매를 한 경우
-- 추천 모델로는 [implicit 라이브러리](https://github.com/benfred/implicit)를 사용했습니다.
+- 사용한 모델로는 [implicit 라이브러리](https://github.com/benfred/implicit)를 사용했습니다.
 ## 프로젝트 배경 및 목적
 
 가상의 이커머스의 데이터분석가라 가정하여 **자사의 
@@ -64,13 +64,20 @@
 
 
 ## 추천 시스템
+해당 결과는 [Recomendation/Recomendation_Model.ipynb](https://github.com/HwangHanJae/eCommerce-RecSystem/blob/main/Recommendation_Test/Recomdation_Model.ipynb)를 통하여 확인할 수 있습니다.
+
+### 과정
+1. 데이터 전처리 진행 후 11월 넘어가는 데이터를 제거
+2. 전환이 일어나지 않은 고객, 전환이 일어난 고객을 두 집단으로 나누기
+3. 각 집단에 대하여 User-Item Matrix(Sparse Matrix)를 생성
+4. [implicit 라이브러리]([implicit 라이브러리](https://github.com/benfred/implicit)) 사용하여 추천시스템 구축
+5. 튜닝 함수 작성 및 성능 개선
+
 ### 최종성능
 <img width=700 alt="image1" src="https://user-images.githubusercontent.com/60374463/195752222-5786207d-6873-41d6-9083-b96c2fd5b723.png">
 <!--![image](https://user-images.githubusercontent.com/60374463/195752222-5786207d-6873-41d6-9083-b96c2fd5b723.png)-->
 
 ### 추천 결과
-
-해당 결과는 [Recomendation/Recomendation_Model.ipynb](https://github.com/HwangHanJae/eCommerce-RecSystem/blob/main/Recommendation_Test/Recomdation_Model.ipynb)를 통하여 확인할 수 있습니다.
 
 <img width=700 alt="image1" src="https://user-images.githubusercontent.com/60374463/195752232-859c520d-4a42-4c49-be78-11c2b77c9686.png">
 <!--![image](https://user-images.githubusercontent.com/60374463/195752232-859c520d-4a42-4c49-be78-11c2b77c9686.png)-->
