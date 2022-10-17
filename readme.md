@@ -1,4 +1,4 @@
-# 이커머스 상품 추천 시스템
+  # 이커머스 상품 추천 시스템
 
 ## 프로젝트 개요
 - **이커머스 고객 행동데이터를 기반으로 상품 추천 시스템**을 구축하였습니다.
@@ -10,9 +10,32 @@
 가상의 이커머스의 데이터분석가라 가정하여 **자사의 
 이커머스 비즈니스의 매출증대를 목표**로 프로젝트를 진행하였습니다.
 
-## 데이터 출처
-https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store
+## 데이터 정보
+<img width=700 alt="image1" src="https://user-images.githubusercontent.com/60374463/196103676-121d7fb8-5d03-4757-ad62-a2ae90ed0cf0.png">
+<!--![image](https://user-images.githubusercontent.com/60374463/196103676-121d7fb8-5d03-4757-ad62-a2ae90ed0cf0.png)-->
 
+출처 : https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store
+
+데이터 크기 : 약 5gb
+
+행 : 약 4200만개
+
+열 : 9개
+
+## 프로젝트 과정
+1. 데이터 경량화(5gb -> 1gb)
+- 데이터 타입 변경
+  - object -> category
+  - float64, int64 -> float32, int32
+  - csv -> parquet
+2. 데이터 전처리
+- GMT+4 국가의 이커머머스로 가정 event_time 컬럼 전처리
+  - UTC 문자 제거
+  - event_time 컬럼에 4시간 더하기
+  - 11월 이후 데이터 제거
+3. 데이터 분석 및 인사이트 도출
+4. implicit 라이브러리를 이용하여 추천시스템 구축
+5. 추천시스템 성능 평가 및 개선
 ## 데이터 분석 및 결과
 
 해당 결과는 아래의 링크를 통하여 확인할 수 있습니다.
