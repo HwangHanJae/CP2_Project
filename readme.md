@@ -67,11 +67,11 @@
 해당 결과는 [Recomendation/Recomendation_Model.ipynb](https://github.com/HwangHanJae/eCommerce-RecSystem/blob/main/Recommendation_Test/Recomdation_Model.ipynb)를 통하여 확인할 수 있습니다.
 
 ### 과정
-1. 데이터 전처리 진행 후 11월 넘어가는 데이터를 제거
-2. 전환이 일어나지 않은 고객, 전환이 일어난 고객을 두 집단으로 나누기
-3. 각 집단에 대하여 User-Item Matrix(Sparse Matrix)를 생성
-4. [implicit 라이브러리]([implicit 라이브러리](https://github.com/benfred/implicit)) 사용하여 추천시스템 구축
-5. 튜닝 함수 작성 및 성능 개선
+1. 데이터 전처리 진행 후 **11월 넘어가는 데이터를 제거**
+2. **전환이 일어나지 않은 고객, 전환이 일어난 고객을 두 집단**으로 나누기
+3. 각 집단에 대하여 **User-Item Matrix(Sparse Matrix)를 생성**
+4. **[implicit 라이브러리]([implicit 라이브러리](https://github.com/benfred/implicit))** 사용하여 **추천시스템 구축**
+5. 튜닝 함수 작성 및 **성능 개선**
 
 ### 최종성능
 <img width=700 alt="image1" src="https://user-images.githubusercontent.com/60374463/195752222-5786207d-6873-41d6-9083-b96c2fd5b723.png">
