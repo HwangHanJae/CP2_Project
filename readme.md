@@ -70,7 +70,7 @@
 1. 데이터 전처리 진행 후 **11월 넘어가는 데이터를 제거**
 2. **전환이 일어나지 않은 고객, 전환이 일어난 고객을 두 집단**으로 나누기
 3. 각 집단에 대하여 **User-Item Matrix(Sparse Matrix)를 생성**
-4. **[implicit 라이브러리]([implicit 라이브러리](https://github.com/benfred/implicit))** 사용하여 **추천시스템 구축**
+4. **[implicit 라이브러리](https://github.com/benfred/implicit)** 사용하여 **추천시스템 구축**
 5. 튜닝 함수 작성 및 **성능 개선**
 
 ### 최종성능
